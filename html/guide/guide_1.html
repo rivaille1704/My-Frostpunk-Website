@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Chơi Frostpunk</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/guide/guide_1.css">
+    <link rel="stylesheet" href="/css/lightdark.css">
+    <script src="/js/lightdark.js" defer></script>
+    <script src="/js/search.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="theme-toggle">
+            <label for="chk" class="theme-label">🌞</label>
+            <input type="checkbox" id="chk" />
+            <label for="chk" class="theme-label">🌙</label>
+        </div>
+        <div class="logo">
+            <a href="/html/index.html"><img style="height: 150px;" alt="Frostpunk Wiki Logo"
+                    src="/images/Site-logo.webp" /></a>
+
+            <h1>Frostpunk Wiki</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="Search...">
+            <button type="button" aria-label="Search">
+                <span>🔍</span>
+            </button>
+            <div id="suggestions" class="suggestions-list"></div>
+        </div>
+        <div class="auth-buttons">
+            <a href="/html/sign-in.html">Đăng nhập</a>
+            <a href="/html/register.html">Đăng ký</a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="dropdown">
+            <a href="/html/index.html" class="dropdown-button nav_head">Khám phá</a>
+            <div class="dropdown-content">
+                <a href="/html/index.html">
+                    <span class="wds-icon-tiny wds-icon navigation-item-icon">🏠</span>
+                    Trang chủ
+                </a>
+                <a href="/html/all_page.html">
+                    Toàn bộ các trang
+                </a>
+            </div>
+        </div>
+        <a href="/html/about_us.html">Về chúng tôi</a>
+        <div class="dropdown">
+            <a href="" class="dropdown-button nav_head">Danh mục</a>
+            <div class="dropdown-content">
+                <a href="/html/introduction.html">
+                    Giới thiệu
+                </a>
+                <a href="/html/guide.html">
+                    Hướng dẫn
+                </a>
+            </div>
+        </div>
+        <a href="/html/demo_game.html">Demo</a>
+        <a href="/html/forum.html">Diễn đàn</a>
+        <a href="/html/contact.html">Liên hệ</a>
+    </div>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Tài nguyên</h2>
+            <table class="image-table">
+                <tr>
+                    <td><img src="images/guide1_1.webp" alt="Resource 1"></td>
+                    <td><img src="images/guide1_2.webp" alt="Resource 2"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/guide1_3.webp" alt="Resource 3"></td>
+                    <td><img src="images/guide1_4.webp" alt="Resource 4"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/guide1_5.webp" alt="Resource 5"></td>
+                    <td><img src="images/guide1_6.webp" alt="Resource 6"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/guide1_7.webp" alt="Resource 7"></td>
+                    <td><img src="images/guide1_8.webp" alt="Resource 8"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/guide1_9.webp" alt="Resource 9"></td>
+                    <td><img src="images/guide1_10.webp" alt="Resource 10"></td>
+                </tr>
+            </table>
+        </aside>
+        
+        <main class="content">
+            <h2>Hướng dẫn kiểm soát tài nguyên</h2>
+            <p><strong>Frostpunk</strong> tùy vào mức độ khó mà lượng tài nguyên có thể nhiều, ít hoặc cực kì khan hiếm. Việc kiếm soát lượng tài nguyên là một điều tất yếu để giúp cho người dân của bạn có thể sinh tồn.     </p>
+
+            <section>
+                <h3>1. Các loại tài nguyên</h3>
+                <p>Trong Frostpunk, có 5 loại tài nguyên là yếu tố cốt lõi quyết định sự sống còn:</p>
+                <ul>
+                    <li><strong>Than:</strong> Cung cấp năng lượng cho Generator. Được thu thập từ những bãi than, máy đầm than và mỏ than</li>
+                    <li><strong>Gỗ:</strong> Dùng để xây dựng, nâng cấp cơ sở hạ tầng và nghiên cứu. Được thu thập từ những thùng gỗ, cây cối và máy khoan tường.</li>
+                    <li><strong>Thép:</strong> Dùng để xây dựng, nâng cấp cơ sở hạ tầng và nghiên cứu. Được thu thập từ công trình bị hư hỏng hoặc xưởng luyện thép.</li>
+                    <li><strong>Thực phẩm sống:</strong>Nguyên liệu để chế tạo suất ăn, được thu thập từ nhà kính hoặc lều thợ săn.</li>
+                    <li><strong>Suất ăn:</strong>Đảm bảo người dân không bị đói. Được chế biến từ thực phẩm sống</li>
+                    <li><strong>Lõi hơi nước:</strong>Tài nguyên khan hiếm nhất được dùng để chế tạo những máy móc, công trình đặc biệt.</li>
+                </ul>
+                <p>Các tài nguyên cũng có thể được thu thập thông qua trinh sát hoặc tiền đồn.</p>
+            </section>
+
+            <section>
+                <h3>2. Giai đoạn đầu game</h3>
+                <p>Ban đầu có những loại tài nguyên có sẵn trên mặt đất, ta có thể cho người dân đi thu thập những bãi than, thùng gỗ xung quanh để xây lều. Ta có thể được yêu cầu bật máy phát điện vào ban ngày tuy nhiên việc đó chỉ nên thực hiện vào ban đêm để đảm bảo tiết kiệm được nhiều than nhất có thể. Ta chỉ nên xây số lều vừa đủ với số lượng người dân và sau đó tập trung vào việc nghiên cứu. Ta cần phải xây dựng lều thợ săn để có thể đảm bảo nguồn lương thực được cung cấp vừa đủ. Giai đoạn này không nên tích trữ tài nguyên mà nên tập trung vào việc nghiên cứu để mở khóa các nghiên cứu giúp tăng năng suất lao động.</p>
+            </section>
+
+            <section>
+                <h3>3. Giai đoạn giữa game</h3>
+                <p>Khi nguồn tài nguyên trên đất của ta cạn kiệt, bây giờ là lúc để xây dựng các máy đầm than, xưởng cưa và xưởng luyện thép. Khi này ta sẽ phải sử dụng lõi hơi nước để xây dựng nhà kính, bệnh xá hoặc chế tạo automaton. Giai đoạn này ta đã có thể nghiên cứu những công nghệ giúp tăng năng suất. Nên mục tiêu của giai đoạn này là làm cho sản xuất trở nên vượt trội hơn so với tiêu dùng để có thể dùng lượng tài nguyên dư ra cho việc phát triển.</p>
+            </section>
+            <section>
+                <h3>3. Giai đoạn cuối game</h3>
+                <p>Giai đoạn này nguồn tài nguyên đã trở nên dồi dào và ta sẽ nghĩ đến việc xây dựng các kho tài nguyên cùng với việc đáp ứng nhu cầu người dân nhiều hơn. Ta có thể xây thêm nhiều bệnh xá, chế tạo nhiều automaton. Khi mà ta có thể cho toàn bộ người dân nghỉ việc mà lượng tài nguyên vẫn dồi dào thì ta đã được coi là chiến thắng. Công việc cuối cùng là đón chờ cơn bão đến cùng với niềm hy vọng tương lai.</p>
+            </section>
+        </main>
+    </div>
+
+    <div class="footer">
+        <div class="footer_column">
+            <div class="logo">
+                <img alt="Frostpunk Wiki Logo" src="/images/fandom20-footer-logo.webp" />
+            </div>
+            <div class="links">
+                <h3>EXPLORE PROPERTIES</h3>
+                <a href="#">Fandom</a>
+                <a href="#">Muthead</a>
+                <a href="#">Fanatical</a>
+            </div>
+            <div class="links">
+                <h3>FOLLOW US</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" class="fab fa-facebook"></a>
+                    <a href="#" target="_blank" class="fab fa-twitter"></a>
+                    <a href="#" target="_blank" class="fab fa-instagram"></a>
+                    <a href="#" target="_blank" class="fab fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_column">
+            <div class="links">
+                <h3>OVERVIEW</h3>
+                <a href="#">What is Fandom?</a>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+                <a href="#">Contact</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Digital Services Act</a>
+                <a href="#">Global Sitemap</a>
+                <a href="#">Local Sitemap</a>
+            </div>
+        </div>
+
+        <div class="footer_column">
+            <div class="links">
+                <h3>COMMUNITY</h3>
+                <a href="#">Community Central</a>
+                <a href="#">Support</a>
+                <a href="#">Help</a>
+                <a href="#">ADVERTISE</a>
+                <a href="#">Media Kit</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer_column">
+            <div class="app-description">
+                <h3>FANDOM APPS</h3>
+                <p>Take your favorite fandoms with you and never miss a beat.</p>
+            </div>
+            <table class="fandom-app-table">
+                <tr>
+                    <td rowspan="2"><img alt="Fandom App Logo"
+                            src="/images/20-year_2024_profile_icon_156x156_PR01.webp" /></td>
+                    <td><img alt="App Image 1" src="/images/GetItOnGooglePlay_Badge_Web_color_English.webp" /></td>
+                </tr>
+                <tr>
+                    <td><img alt="App Image 2" src="/images/Download_on_the_App_Store_Badge_opt.webp" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
