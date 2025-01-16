@@ -1,0 +1,114 @@
+.content {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(44, 47, 51, 0.8);
+    border-radius: 10px;
+    min-height: 100vh;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    color: #fff;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+html.light {
+    --box: #89BBDC;
+    --quicka:black
+}
+
+html.dark {
+    --box: #2b2b2b;
+    --quicka:#80d0ff
+}
+.read-more {
+    position: absolute; 
+    bottom: 10px;
+    right: 10px; 
+    font-size: 0.9em;
+    color: var(--quicka); 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    background-color: var(--box);
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.quick-links img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #444;
+}
+
+.quick-links a {
+    text-decoration: none;
+    font-size: 0.8em;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    font-size: 0.8em;
+    color: var(--quicka);
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+

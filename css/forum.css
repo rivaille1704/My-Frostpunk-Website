@@ -1,0 +1,141 @@
+.forum_content {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(44, 47, 51, 0.8);
+    border-radius: 10px;
+    min-height: 80vh;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #000000;
+    margin-top: 50px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 50px;
+    font-size: 50px;
+}
+
+html.light {
+    --forum-post-form: #829DB8;
+    --forum-post: #829DB8;
+    --forum-text: #2E3A46;
+    --comment:#BCE0F6;
+}
+
+html.dark {
+    --forum-post-form: #87B5D1;
+    --forum-post: #87B5D1;
+    --forum-text: #2E3A46;
+    --comment:#2C3E48;
+}
+
+.post-form {
+    background-color: var(--forum-post-form);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.post-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #292B75;
+    color: white;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.post-form button {
+    background-color: #2C3E48;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+}
+
+.post-form button:hover {
+    background-color: #e4004f;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.post {
+    background-color: var(--forum-post);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.post h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--forum-text);
+}
+
+.post .delete-post {
+    background-color: transparent;
+    color: #fa005a;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+}
+
+.delete-post:hover {
+    color: #e4004f;
+}
+
+.comment-section {
+    margin-top: 2rem;
+}
+
+.comment-section textarea {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #292B75;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.comment-section button {
+    background-color: #2C3E48;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.comment-section button:hover {
+    background-color: #e4004f;
+}
+
+.comments {
+    margin-top: 1rem;
+}
+
+.comment {
+    background-color: var(--comment);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}

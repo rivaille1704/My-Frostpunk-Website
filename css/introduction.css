@@ -1,0 +1,77 @@
+
+html.light {
+    --introduction: white;
+    --table-head: #89BBDC;
+    --table-content-bg: #89BBDC;
+}
+
+html.dark {
+    --introduction: #2b2b2b;
+    --table-head: #333;
+    --table-content-bg: #333;
+}
+
+.introduction_content {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(44, 47, 51, 0.8);
+    border-radius: 10px;
+    min-height: 100vh;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    color: #fff;
+    color: var(--text-color);
+    background-color: var(--introduction);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+  }
+  
+  .event-table th, .event-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: var(--text-color);
+  }
+  
+  .event-table th {
+    text-align: center;
+    background-color: var(--table-head);
+  }
+  
+  .event-table tr{
+    background-color: var(--table-content-bg);
+  }
+  
+  .system-requirements {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .system-requirements th,
+  .system-requirements td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: var(--text-color)
+  }
+  
+  .system-requirements th {
+    background-color: var(--table-head);
+    width: 200px;
+  }
+  
+  .system-requirements td {
+    background-color: var(--table-content-bg);
+  }
+  
+
+

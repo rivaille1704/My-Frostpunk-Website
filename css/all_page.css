@@ -1,0 +1,40 @@
+.content {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(44, 47, 51, 0.8);
+    border-radius: 10px;
+    min-height: 100vh;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    color: #fff;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.all-pages-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+h2{
+    font-size: 50px;
+}
+p
+{
+    font-size: 25px;
+}
+.all-pages-list a {
+    text-decoration: none;
+    color: #00bcd4;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-size: 35px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.all-pages-list a:hover {
+    color: #e91e63;
+}

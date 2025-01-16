@@ -1,0 +1,39 @@
+.aboutus_content {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(44, 47, 51, 0.8);
+    border-radius: 10px;
+    min-height: 100vh;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    color: #fff;
+    color: var(--text-color); 
+    background-color: var(--background-color);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.aboutus_content h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.aboutus_content h3 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+.aboutus_content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.aboutus_content a {
+    color: #fa005a;
+    text-decoration: none;
+}
+
+.aboutus_content a:hover {
+    text-decoration: underline;
+}

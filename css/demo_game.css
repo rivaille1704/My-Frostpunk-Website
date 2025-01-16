@@ -1,0 +1,135 @@
+.channel_tuner
+{
+    font-size: 100%;color: cyan ;text-align: center;
+}
+img {
+    display: block;
+    width: 100%;    
+    height: auto
+}
+.video_screen {
+    display: block;
+    width: 100%;    
+    height: auto
+}
+
+.movie {
+    padding: 4em
+}
+
+.movie1 {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.movie2 {
+    max-width: 84%;
+    position: relative
+}
+
+.movie__control {
+    padding: 20px
+}
+
+.movie__control button {
+    display: block;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.movie__control button img {
+    transition-duration: 200ms;
+}
+
+.movie__control button:hover img {
+    transform: rotate(30deg)
+}
+
+.movie__control button:active img {
+    transform: rotate(60deg)
+}
+
+.tv__frame {
+    position: relative;
+    z-index: 2
+}
+
+.tv2 {
+    position: absolute;
+    top: 8%;
+    left: 9%;
+    width: 82%;
+    height: 84%;
+    background: url(../img/noize2.gif) 0 0 repeat #000;
+    background-size: 64px
+}
+
+.tv__anchor {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200
+}
+
+.tv__anchor svg {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 100%;
+    width: 100px;
+    margin-left: -50px;
+    z-index: 1
+}
+
+.tv__anchor svg use:first-child,
+.tv__anchor svg path:first-child {
+    opacity: .8;
+    fill: #212121;
+    transition-property: opacity, fill;
+    transition-duration: 100ms;
+    transition-timing-function: ease
+}
+
+.tv__anchor svg use:last-child,
+.tv__anchor svg path:last-child {
+    fill: #fff
+}
+
+.tv__anchor:hover svg use:first-child,
+.tv__anchor:hover svg path:first-child {
+    fill: red
+}
+
+.tv {
+    animation-name: CURVE;
+    animation-delay: 400ms;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: scale(0, 0)
+}
+
+@keyframes CURVE {
+    0% {
+        transform: scale(0, 0)
+    }
+
+    20% {
+        transform: scale(1, 0.1)
+    }
+
+    90% {
+        transform: scale(0.95, 1.1)
+    }
+
+    100% {
+        transform: scale(1, 1)
+    }
+}

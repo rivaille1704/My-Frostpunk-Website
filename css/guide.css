@@ -1,0 +1,131 @@
+html.light {
+    --guide-text: #000;
+    --guide: #fff;
+}
+
+html.dark {
+    --guide-text: #fff;
+    --guide: #000;
+}
+
+h2 {
+    font-size: 50px;
+    color: var(--guide-text);
+}
+
+.guide-content {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    min-height: 100vh;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: var(--guide);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.guide-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.guide-container h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.guide-container .subtitle {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 0 0 calc(25% - 20px);
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 60%;
+    display: block;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #00bcd4;
+    margin: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 0 15px 15px;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #00bcd4;
+    padding: 5px 10px;
+    border: 1px solid #00bcd4;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #00bcd4;
+    color: #121212;
+}
+
+.pagination .current-page {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00bcd4;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.pagination .dots {
+    color: #b0b0b0;
+    padding: 0 5px;
+}
